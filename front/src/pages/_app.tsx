@@ -1,12 +1,11 @@
-import { CssBaseline } from '@mui/material'
+import { ChakraProvider } from '@chakra-ui/react'
 import type { AppProps } from 'next/app'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <CssBaseline />
+    <ChakraProvider resetCSS>
       <Component {...pageProps} />
-    </>
+    </ChakraProvider>
   )
 }
 

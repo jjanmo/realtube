@@ -1,14 +1,16 @@
+import Navigation from '@components/Navigation'
+
 interface Props {
-  children?: React.ReactNode;
+  children?: React.ReactNode
 }
 
 const Layout = ({ children }: Props) => {
   return (
     <div>
-      <div>Common</div>
+      <Navigation />
       {children}
     </div>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout
