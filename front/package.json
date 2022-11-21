@@ -1,8 +1,8 @@
 {
-  "name": "ts-node-bird-front",
+  "name": "jjanweeter",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Tweeter+ Clone Coding",
+  "main": "",
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -12,11 +12,6 @@
   "author": "JJanmo",
   "license": "ISC",
   "dependencies": {
-    "@chakra-ui/icons": "^2.0.1",
-    "@chakra-ui/react": "^2.1.2",
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
-    "framer-motion": "^6.3.10",
     "next": "^12.1.6"
   },
   "devDependencies": {
