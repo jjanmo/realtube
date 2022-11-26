@@ -1,4 +1,4 @@
-import Navigation from '@components/Navigation'
+import GNB from '@components/GNB'
 
 interface Props {
   children?: React.ReactNode
@@ -7,7 +7,7 @@ interface Props {
 const Layout = ({ children }: Props) => {
   return (
     <div>
-      <Navigation />
+      <GNB />
       {children}
     </div>
   )
