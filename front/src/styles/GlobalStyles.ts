@@ -7,7 +7,9 @@ const GlobalStyles = createGlobalStyle`
   :root {
     font-size: 10px;
   }
-  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
   *,
   *:before,
   *:after {
