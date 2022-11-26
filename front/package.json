@@ -1,7 +1,7 @@
 {
   "name": "jjanweeter",
   "version": "1.0.0",
-  "description": "Tweeter+ Clone Coding",
+  "description": "Tweeter Clone Coding",
   "main": "",
   "scripts": {
     "dev": "next",

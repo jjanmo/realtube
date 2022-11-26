@@ -4,7 +4,8 @@
     "paths": {
       "@pages/*": ["src/pages/*"],
       "@components/*": ["src/components/*"],
-      "@styles/*": ["src/styles/*"]
+      "@styles/*": ["src/styles/*"],
+      "@constants/*": ["src/constants/*"]
     },
     "target": "es2016",
     "jsx": "preserve",
