@@ -5,7 +5,9 @@
       "@pages/*": ["src/pages/*"],
       "@components/*": ["src/components/*"],
       "@styles/*": ["src/styles/*"],
-      "@constants/*": ["src/constants/*"]
+      "@constants/*": ["src/constants/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@hoc/*": ["src/hoc/*"]
     },
     "target": "es2016",
     "jsx": "preserve",
