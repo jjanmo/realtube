@@ -6,6 +6,8 @@ interface ScreenContextType {
   isSmall: boolean
   isLarge: boolean
   isXLarge: boolean
+  isLargeWeb: boolean
+  isSmallWeb: boolean
 }
 
 export const ScreenContext = createContext({} as ScreenContextType)
@@ -22,11 +24,16 @@ export function withScreen<T>(WrappedComponent: React.ComponentType<T>) {
     const isLarge = useMediaQuery({ minWidth: 769, maxWidth: 1024 })
     const isXLarge = useMediaQuery({ minWidth: 1025 })
 
+    const isLargeWeb = useMediaQuery({ minWidth: 769 })
+    const isSmallWeb = useMediaQuery({ maxWidth: 768 })
+
     const screenContext = {
       isXSmall,
       isSmall,
       isLarge,
       isXLarge,
+      isLargeWeb,
+      isSmallWeb,
     }
 
     return (
