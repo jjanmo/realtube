@@ -1,19 +1,23 @@
-# TS-Nodebird
+# RealTube
 
-## Goals
+- What is RealTube : 리얼클래스(or스쿨라이브) + 유튜브 = 리얼튜브
 
-- **풀스택**을 구현함으로서 실무에서 직접 **처음부터** 해보지 못했던, **궁금했던** 부분들에 대한 `의도적 수련`을 하자! ⭐️
+- 영어공부를 위한 영상 `플랫폼` 사이트를 만들어보자!
 
-- 예전에 사용해봤던 기술들 + 내가 새롭게 사용해보고 싶은 기술들을 적용해봄으로써 기술에 익숙해지고 나아가 궁극적으로 `기술 기저의 개념들`에 대해서 익숙해지는 시간을 갖고자 한다.
+<details>
+  <summary>Motive</summary>
 
-- 실제 SNS 앱을 만들때, 어떤 식으로 만들지를 `실무적인 고민`하고 만들어보자.
+- 내가 개발 중인 서비스에 대해 기술적으로 좀 더 알고 싶은 마음
+- 최초에는 어떤 식으로 개발되었기에 지금과 같은 모습을 지니게 된 것일까에 대한 궁금증
+- 내가 생각하는 서비스의 방향성을 적용해보자.
+</details>
 
-- 묵혀두었던 [Nodebird](https://www.inflearn.com/course/%EB%85%B8%EB%93%9C%EB%B2%84%EB%93%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%A6%AC%EB%89%B4%EC%96%BC)강의 참고하여 진행한다.
+## Tech
 
-## Techstack
+- `Next.js`를 활용한 Fullstack Development Flow
 
-- Frontend
-  - Typescript
-  - NextJS
-  - RTK(ReduxToolkit), Redux Saga, SWR
-  - StyledComponent
+- 최대한 `실무적인 관점`에서 고민해보기
+
+# Reference
+
+- 묵혀두었던 [Nodebird](https://www.inflearn.com/course/%EB%85%B8%EB%93%9C%EB%B2%84%EB%93%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%A6%AC%EB%89%B4%EC%96%BC)
