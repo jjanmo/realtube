@@ -1,18 +1,18 @@
 export const links = [
   {
-    text: '홈',
+    text: '드라마',
     href: '/',
   },
   {
-    text: '프로필',
-    href: '/profile',
+    text: '영화',
+    href: '/',
   },
   {
-    text: '로그인',
-    href: '/account/signin',
+    text: '스피치',
+    href: '/',
   },
   {
-    text: '회원가입',
-    href: '/account/signup',
+    text: '예능',
+    href: '/',
   },
 ]
