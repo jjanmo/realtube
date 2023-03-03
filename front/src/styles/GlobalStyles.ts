@@ -22,6 +22,11 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     cursor: pointer;
   }
+  input {
+    border: 0;
+    outline: 0;
+    color: inherit;
+  }
 
 
 `

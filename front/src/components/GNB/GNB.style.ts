@@ -29,6 +29,9 @@ export const LogoWrapper = styled.div`
     color: ${COLORS.GRAY};
   }
 
+  a {
+    display: flex;
+  }
   svg {
     font-size: 2rem;
   }

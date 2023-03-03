@@ -7,6 +7,7 @@ export const COLORS = {
   THEME_600: '#8AAAE5',
 
   CLOUD: '#ecf0f1',
+  SILVER: '#bdc3c7',
   GRAY: '#636e72',
   BLACK: '#2d3436',
 }
