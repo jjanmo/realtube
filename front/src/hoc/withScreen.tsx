@@ -1,36 +1,42 @@
+import { createContext, useContext } from 'react'
 import { useMediaQuery } from 'react-responsive'
 
-export interface WithScreenContextProps {
+interface ScreenContextType {
   isXSmall: boolean
   isSmall: boolean
   isLarge: boolean
   isXLarge: boolean
 }
 
-export function withScreen<T extends WithScreenContextProps = WithScreenContextProps>(
-  WrappedComponent: React.ComponentType<T>
-) {
-  return () => {
-    const displayName = WrappedComponent.displayName || 'Component'
+export const ScreenContext = createContext({} as ScreenContextType)
+export default function useScreenContext() {
+  return useContext(ScreenContext)
+}
 
-    const ComponentWithScreenContext = (props: T) => {
-      const isXSmall = useMediaQuery({ maxWidth: 480 })
-      const isSmall = useMediaQuery({ minWidth: 481, maxWidth: 768 })
-      const isLarge = useMediaQuery({ minWidth: 769, maxWidth: 1024 })
-      const isXLarge = useMediaQuery({ minWidth: 1025 })
+export function withScreen<T>(WrappedComponent: React.ComponentType<T>) {
+  const displayName = WrappedComponent.displayName || 'Component'
 
-      const screenContext = {
-        isXSmall,
-        isSmall,
-        isLarge,
-        isXLarge,
-      }
+  const ComponentWithScreen = (props: T & JSX.IntrinsicAttributes) => {
+    const isXSmall = useMediaQuery({ maxWidth: 480 })
+    const isSmall = useMediaQuery({ minWidth: 481, maxWidth: 768 })
+    const isLarge = useMediaQuery({ minWidth: 769, maxWidth: 1024 })
+    const isXLarge = useMediaQuery({ minWidth: 1025 })
 
-      return <WrappedComponent {...screenContext} {...(props as T)} />
+    const screenContext = {
+      isXSmall,
+      isSmall,
+      isLarge,
+      isXLarge,
     }
 
-    ComponentWithScreenContext.displayName = `withScreen(${displayName})`
-
-    return ComponentWithScreenContext
+    return (
+      <ScreenContext.Provider value={screenContext}>
+        <WrappedComponent {...(props as T & JSX.IntrinsicAttributes)} />
+      </ScreenContext.Provider>
+    )
   }
+
+  ComponentWithScreen.displayName = `withScreen(${displayName})`
+
+  return ComponentWithScreen
 }
